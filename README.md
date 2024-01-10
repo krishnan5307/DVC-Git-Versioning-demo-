@@ -52,7 +52,7 @@ added a txt to check first version dvc
 
 repeat this step for n number of data modified in data/data.txt 
 
-## to go to that particualar chekout or data versinoing
+## to go to that particualar chekout or data versinoing or branch 
 
       - git log   ## to see the versioning id in git and copy that id
       - git checkout <versioining id copied earlier: eg :14a8427d26b3041da94f44a1db322b6ebcc6245e >
