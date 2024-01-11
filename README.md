@@ -87,13 +87,6 @@ This is bcoz the changes from 'git checkout <id>', will chnaes data/data.txt as 
       - git push origin new-branch-name 
 This step is optional, and you can skip it if you are working locally
 
-# Set the New Branch as Default:
-      - git branch -m main
-      - git push -u origin main
-If you want to make the new branch your "master" branch, you can rename it locally and push the changes:
-Replace "main" with the desired name for your default branch.
-
-
  the remote main branch has changes that your local branch (new_branch) does not have. To resolve this, you need to fetch the changes from the remote main branch, merge them into your local branch, and then push your changes again. Here's the sequence of commands you can use:
 
 # Switch to your feature branch
@@ -108,3 +101,12 @@ Resolve any merge conflicts if there are any
 
 # Push your changes to the remote main branch
  - git push origin new_branch:main
+
+
+
+
+# Set the New Branch as Default:
+      - git branch -m main
+      - git push -u origin main
+If you want to make the new branch your "master" branch, you can rename it locally and push the changes:
+Replace "main" with the desired name for your default branch.
