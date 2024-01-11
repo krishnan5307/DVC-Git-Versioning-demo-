@@ -111,3 +111,15 @@ Resolve any merge conflicts if there are any
       - git push -u origin main
 If you want to make the new branch your "master" branch, you can rename it locally and push the changes:
 Replace "main" with the desired name for your default branch.
+
+
+# if ur feature branch is behind chnages reflected in main , then u need to pull the changes from main into feature branch
+Your branch is behind 'origin/main' by 8 commits, and can be fast-forwarded. (use 'git pull' to update your local branch)" means that your local main branch is not up-to-date with the remote main branch. There have been 8 new commits on the remote main branch that you don't have in your local branch.
+
+To update your local main branch with the latest changes from the remote repository, you can use the following commands:
+
+       - git pull origin main
+After this step both feature and main branch will have all changes    
+
+# you might want to make sure your feature branch is also up-to-date with the latest changes from the main branch. 
+       - - git pull origin main
