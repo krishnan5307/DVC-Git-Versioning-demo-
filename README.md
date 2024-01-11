@@ -106,8 +106,6 @@ Resolve any merge conflicts if there are any
  - git push origin new_branch:main
 
 
-
-
 # Set the New Branch as Default:
       - git branch -m main
       - git push -u origin main
