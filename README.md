@@ -51,6 +51,8 @@ added a txt to check first version dvc
       - git commit -m "updated for new data versining of text"
 
 repeat this step for n number of data modified in data/data.txt 
+dvc add . Adds files to DVC and generates corresponding .dvc files.
+The .dvc files act as pointers to the actual data files stored by DVC, and Git keeps track of these pointers.
 
 ## to go to that particualar chekout or data versinoing or branch 
 
