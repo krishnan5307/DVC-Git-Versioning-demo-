@@ -65,8 +65,46 @@ means hash will change to that particualr one from .dvc/cache folder
 
       - git checkout main
 
-## only we can switch to a particular data dvc versioing we done after checkinout that particular git versioing 
-## both goes hand in hand
+only we can switch to a particular data dvc versioing we done after checkinout that particular git versioing 
+both goes hand in hand
 
-## each time when we go to that particular versioing we can see data/data.txt getting changed to that particular data and that hashing in data/data.txt.dvc getting chnaged to that particlar hash. # 
-# This is bcoz the changes from 'git checkout <id>' will chnaes data/data.txt as it is tracked by git and this in turn will fetch that particualr hashing id data from '.dvc/cache' and this wil updated in data/data.txt
+each time when we go to that particular versioing we can see data/data.txt getting changed to that particular data and that hashing in data/data.txt.dvc getting chnaged to that particlar hash. # 
+This is bcoz the changes from 'git checkout <id>', will chnaes data/data.txt as it is tracked by git and this in turn will fetch that particualr hashing id data from '.dvc/cache' and this wil updated in data/data.txt
+
+
+# incase u need to create a feature branch and later push it to remote repo or main/master branch
+
+# Create a New Branch:
+      - git branch new-branch-name
+# Switch to the New Branch:
+      - git checkout new-branch-name
+# single command to create and switch to the new branch:
+      - git checkout -b new-branch-name
+# Make Changes and Commit:
+      - git add .
+      - git commit -m "Your commit message here"
+# Push the New Branch to the Remote Repository:
+      - git push origin new-branch-name 
+This step is optional, and you can skip it if you are working locally
+
+# Set the New Branch as Default:
+      - git branch -m main
+      - git push -u origin main
+If you want to make the new branch your "master" branch, you can rename it locally and push the changes:
+Replace "main" with the desired name for your default branch.
+
+
+ the remote main branch has changes that your local branch (new_branch) does not have. To resolve this, you need to fetch the changes from the remote main branch, merge them into your local branch, and then push your changes again. Here's the sequence of commands you can use:
+
+# Switch to your feature branch
+ - git checkout new_branch
+
+# Fetch the latest changes from the remote repository
+ - git fetch
+
+# Merge the changes from the remote main branch into your feature branch
+ - git merge origin/main
+Resolve any merge conflicts if there are any
+
+# Push your changes to the remote main branch
+ - git push origin new_branch:main
