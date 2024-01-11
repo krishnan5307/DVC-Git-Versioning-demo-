@@ -121,5 +121,7 @@ To update your local main branch with the latest changes from the remote reposit
        - git pull origin main
 After this step both feature and main branch will have all changes    
 
-# you might want to make sure your feature branch is also up-to-date with the latest changes from the main branch. 
+# you might want to make sure your feature branch is also up-to-date with the latest changes from the main branch everytime u r swithcing the branches, all branhches should be updated. 
        - - git pull origin main
+
+
