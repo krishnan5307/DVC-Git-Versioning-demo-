@@ -72,6 +72,8 @@ each time when we go to that particular versioing we can see data/data.txt getti
 This is bcoz the changes from 'git checkout <id>', will chnaes data/data.txt as it is tracked by git and this in turn will fetch that particualr hashing id data from '.dvc/cache' and this wil updated in data/data.txt
 
 
+Below steps has to be used inorder to push changes while woriking form new feature branch to main/master/remote repo
+
 # incase u need to create a feature branch and later push it to remote repo or main/master branch
 
 # Create a New Branch:
@@ -88,7 +90,6 @@ This is bcoz the changes from 'git checkout <id>', will chnaes data/data.txt as 
 This step is optional, and you can skip it if you are working locally
 
  the remote main branch has changes that your local branch (new_branch) does not have. To resolve this, you need to fetch the changes from the remote main branch, merge them into your local branch, and then push your changes again. Here's the sequence of commands you can use:
-
 # Switch to your feature branch
  - git checkout new_branch
 
