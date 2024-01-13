@@ -1,0 +1,4 @@
+[core]
+    remote = mylocalremote
+['remote "mylocalremote"']
+    url = C:\\data science\\DVC\\DVC-demo-\\dvc_remote
